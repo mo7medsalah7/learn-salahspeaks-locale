@@ -19,34 +19,35 @@ const translations = {
     'nav.login': 'تسجيل الدخول',
     
     // Hero
-    'hero.title': 'تعلم تصميم تجربة المستخدم',
-    'hero.titleHighlight': 'بمعسكرات تفاعلية',
-    'hero.subtitle': 'منصة salahspeaks المتخصصة في تعليم مهارات تصميم تجربة المستخدم بشكل عملي تفاعلي على يد خبراء ومحترفين تمتد خبراتهم لأكثر من 15 عامًا في المجال',
+    'hero.title': 'احترف لينكس والحوسبة السحابية',
+    'hero.titleHighlight': 'مع معسكرات تفاعلية',
+    'hero.subtitle': 'منصة salahspeaks المتخصصة في تعليم إدارة أنظمة لينكس والحوسبة السحابية بشكل عملي تفاعلي على يد خبراء ومحترفين معتمدين من Red Hat تمتد خبراتهم لأكثر من 15 عامًا',
     'hero.cta.primary': 'اكتشف المعسكرات',
     'hero.cta.secondary': 'تصفح الدورات',
     
     // Stats
-    'stats.camps': 'معسكر تفاعلي',
-    'stats.camps.count': '+30',
-    'stats.instructors': 'مدربين محترفين',
-    'stats.instructors.count': '+15',
-    'stats.certificates': 'شهادات معتمدة',
+    'stats.camps': 'دورة تدريبية',
+    'stats.camps.count': '+20',
+    'stats.instructors': 'مدربين معتمدين',
+    'stats.instructors.count': '+10',
+    'stats.certificates': 'شهادات Red Hat',
     'stats.certificates.count': '100%',
     
     // Camps
-    'camps.title': 'المعسكرات التفاعلية المتاحة',
-    'camps.subtitle': 'اختر المعسكر المناسب لك وابدأ رحلتك في عالم تصميم تجربة المستخدم',
+    'camps.title': 'الدورات التدريبية المتاحة',
+    'camps.subtitle': 'اختر المسار المناسب لك وابدأ رحلتك في عالم لينكس والحوسبة السحابية',
     'camps.card.enroll': 'سجل الآن',
     'camps.currency': 'ر.س',
     
     // Course Categories
-    'category.ui': 'تصميم الواجهات',
-    'category.ux': 'تجربة المستخدم',
-    'category.research': 'بحث المستخدم',
+    'category.linux': 'إدارة لينكس',
+    'category.automation': 'الأتمتة',
+    'category.cloud': 'الحوسبة السحابية',
+    'category.containers': 'الحاويات',
     
     // Footer
     'footer.about': 'من نحن',
-    'footer.about.text': 'منصة salahspeaks الرائدة في تعليم تصميم تجربة المستخدم في الشرق الأوسط بأساليب عملية وتفاعلية.',
+    'footer.about.text': 'منصة salahspeaks الرائدة في تعليم إدارة أنظمة لينكس والحوسبة السحابية في الشرق الأوسط بأساليب عملية وتفاعلية.',
     'footer.links': 'روابط سريعة',
     'footer.support': 'الدعم',
     'footer.social': 'تواصل معنا',
@@ -59,40 +60,41 @@ const translations = {
   en: {
     // Navbar
     'nav.home': 'Home',
-    'nav.camps': 'Camps',
+    'nav.camps': 'Bootcamps',
     'nav.courses': 'Courses',
     'nav.graduates': 'Graduates',
     'nav.login': 'Login',
     
     // Hero
-    'hero.title': 'Learn UX Design with',
-    'hero.titleHighlight': 'Interactive Camps',
-    'hero.subtitle': 'salahspeaks is the leading platform for learning UX design skills through practical, interactive methods with experts and professionals with over 15 years of experience in the field',
-    'hero.cta.primary': 'Discover Camps',
+    'hero.title': 'Master Linux & Cloud',
+    'hero.titleHighlight': 'with Interactive Bootcamps',
+    'hero.subtitle': 'salahspeaks is the leading platform for learning Linux system administration and cloud computing through practical, hands-on training with Red Hat certified experts with over 15 years of experience',
+    'hero.cta.primary': 'Discover Bootcamps',
     'hero.cta.secondary': 'View Courses',
     
     // Stats
-    'stats.camps': 'Interactive Camps',
-    'stats.camps.count': '30+',
-    'stats.instructors': 'Expert Instructors',
-    'stats.instructors.count': '15+',
-    'stats.certificates': 'Accredited Certificates',
+    'stats.camps': 'Training Courses',
+    'stats.camps.count': '20+',
+    'stats.instructors': 'Certified Instructors',
+    'stats.instructors.count': '10+',
+    'stats.certificates': 'Red Hat Certificates',
     'stats.certificates.count': '100%',
     
     // Camps
-    'camps.title': 'Available Interactive Camps',
-    'camps.subtitle': 'Choose the right camp for you and start your journey in the world of UX design',
+    'camps.title': 'Available Training Courses',
+    'camps.subtitle': 'Choose the right path for you and start your journey in Linux and Cloud computing',
     'camps.card.enroll': 'Enroll Now',
     'camps.currency': 'SAR',
     
     // Course Categories
-    'category.ui': 'UI Design',
-    'category.ux': 'UX Design',
-    'category.research': 'User Research',
+    'category.linux': 'Linux Admin',
+    'category.automation': 'Automation',
+    'category.cloud': 'Cloud Computing',
+    'category.containers': 'Containers',
     
     // Footer
     'footer.about': 'About Us',
-    'footer.about.text': 'salahspeaks is the leading platform for teaching UX design in the Middle East with practical and interactive methods.',
+    'footer.about.text': 'salahspeaks is the leading platform for teaching Linux system administration and cloud computing in the Middle East with practical and interactive methods.',
     'footer.links': 'Quick Links',
     'footer.support': 'Support',
     'footer.social': 'Connect With Us',

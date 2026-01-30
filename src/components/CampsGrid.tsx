@@ -10,63 +10,69 @@ const CampsGrid = () => {
   const camps = [
     {
       id: 1,
-      titleAr: 'معسكر تصميم الواجهات UI',
-      titleEn: 'UI Design Bootcamp',
-      categoryKey: 'category.ui',
-      price: 7800,
-      duration: isRTL ? '8 أسابيع' : '8 Weeks',
-      students: 45,
-      gradient: 'from-primary to-blue-500',
+      titleAr: 'إدارة لينكس 1 (RHCSA)',
+      titleEn: 'Linux Admin 1 (RHCSA)',
+      categoryKey: 'category.linux',
+      price: 5500,
+      duration: isRTL ? '5 أيام' : '5 Days',
+      students: 85,
+      gradient: 'from-red-600 to-red-800',
+      icon: '🐧',
     },
     {
       id: 2,
-      titleAr: 'معسكر تجربة المستخدم UX',
-      titleEn: 'UX Design Bootcamp',
-      categoryKey: 'category.ux',
-      price: 9500,
-      duration: isRTL ? '12 أسبوع' : '12 Weeks',
-      students: 38,
-      gradient: 'from-accent to-purple-500',
+      titleAr: 'إدارة لينكس 2 (RHCE)',
+      titleEn: 'Linux Admin 2 (RHCE)',
+      categoryKey: 'category.linux',
+      price: 6500,
+      duration: isRTL ? '5 أيام' : '5 Days',
+      students: 62,
+      gradient: 'from-red-700 to-rose-900',
+      icon: '🔧',
     },
     {
       id: 3,
-      titleAr: 'معسكر بحث المستخدم',
-      titleEn: 'User Research Camp',
-      categoryKey: 'category.research',
-      price: 5500,
-      duration: isRTL ? '6 أسابيع' : '6 Weeks',
-      students: 52,
-      gradient: 'from-success to-teal-500',
+      titleAr: 'المسار الكامل لإدارة لينكس',
+      titleEn: 'Linux Administration Full Track',
+      categoryKey: 'category.linux',
+      price: 10500,
+      duration: isRTL ? '10 أيام' : '10 Days',
+      students: 45,
+      gradient: 'from-red-600 to-orange-600',
+      icon: '🎯',
     },
     {
       id: 4,
-      titleAr: 'معسكر التصميم الشامل',
-      titleEn: 'Complete Design Camp',
-      categoryKey: 'category.ux',
-      price: 12000,
-      duration: isRTL ? '16 أسبوع' : '16 Weeks',
-      students: 28,
-      gradient: 'from-primary to-accent',
+      titleAr: 'أتمتة الأنظمة باستخدام Ansible',
+      titleEn: 'Ansible Automation',
+      categoryKey: 'category.automation',
+      price: 5000,
+      duration: isRTL ? '4 أيام' : '4 Days',
+      students: 78,
+      gradient: 'from-slate-700 to-slate-900',
+      icon: '⚡',
     },
     {
       id: 5,
-      titleAr: 'معسكر Figma المتقدم',
-      titleEn: 'Advanced Figma Camp',
-      categoryKey: 'category.ui',
-      price: 4500,
-      duration: isRTL ? '4 أسابيع' : '4 Weeks',
-      students: 67,
-      gradient: 'from-orange-500 to-red-500',
+      titleAr: 'إدارة الأنظمة مع Red Hat Satellite',
+      titleEn: 'Red Hat Satellite',
+      categoryKey: 'category.cloud',
+      price: 7500,
+      duration: isRTL ? '5 أيام' : '5 Days',
+      students: 34,
+      gradient: 'from-blue-600 to-indigo-800',
+      icon: '🛰️',
     },
     {
       id: 6,
-      titleAr: 'معسكر Design Systems',
-      titleEn: 'Design Systems Camp',
-      categoryKey: 'category.ui',
+      titleAr: 'منصة OpenShift للحاويات',
+      titleEn: 'OpenShift Container Platform',
+      categoryKey: 'category.containers',
       price: 8500,
-      duration: isRTL ? '10 أسابيع' : '10 Weeks',
-      students: 34,
-      gradient: 'from-indigo-500 to-primary',
+      duration: isRTL ? '5 أيام' : '5 Days',
+      students: 56,
+      gradient: 'from-red-500 to-red-700',
+      icon: '☸️',
     },
   ];
 
@@ -80,8 +86,8 @@ const CampsGrid = () => {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            {isRTL ? 'المعسكرات' : 'Bootcamps'}
+          <span className="inline-block px-4 py-2 rounded-full bg-red-600/10 text-red-600 text-sm font-medium mb-4">
+            {isRTL ? '🐧 دورات لينكس والسحابة' : '🐧 Linux & Cloud Courses'}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t('camps.title')}
@@ -114,8 +120,8 @@ const CampsGrid = () => {
                 <div className="absolute bottom-4 right-4 w-20 h-20 rounded-full bg-white/10 blur-xl" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                    <span className="text-3xl font-bold text-white">
-                      {camp.id}
+                    <span className="text-4xl">
+                      {camp.icon}
                     </span>
                   </div>
                 </div>
