@@ -1,16 +1,13 @@
+import React from 'react';
 import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import StatsBar from '@/components/StatsBar';
-import CampsGrid from '@/components/CampsGrid';
 import Footer from '@/components/Footer';
+import CampsGrid from '@/components/CampsGrid';
 
-const Index = () => {
+const CampsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        <HeroSection />
-        <StatsBar />
         <CampsGrid />
       </main>
       <Footer />
@@ -18,4 +15,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default CampsPage;

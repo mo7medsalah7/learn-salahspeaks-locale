@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
@@ -14,9 +15,9 @@ const Footer = () => {
 
   const quickLinks = [
     { label: t('nav.home'), href: '#' },
-    { label: t('nav.camps'), href: '#camps' },
-    { label: t('nav.courses'), href: '#courses' },
-    { label: t('nav.graduates'), href: '#graduates' },
+    { label: t('nav.camps'), href: '/camps' },
+    { label: t('nav.courses'), href: '/camps' },
+    { label: t('nav.graduates'), href: '/graduates' },
   ];
 
   const supportLinks = [
@@ -72,12 +73,18 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-white/70 hover:text-white hover:underline transition-colors"
-                  >
-                    {link.label}
-                  </a>
+                  {link.href.startsWith('/') ? (
+                    <Link to={link.href} className="text-white/70 hover:text-white hover:underline transition-colors">
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-white/70 hover:text-white hover:underline transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -94,12 +101,18 @@ const Footer = () => {
             <ul className="space-y-3">
               {supportLinks.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-white/70 hover:text-white hover:underline transition-colors"
-                  >
-                    {link.label}
-                  </a>
+                  {link.href.startsWith('/') ? (
+                    <Link to={link.href} className="text-white/70 hover:text-white hover:underline transition-colors">
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-white/70 hover:text-white hover:underline transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -122,14 +135,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <a href="tel:+966500000000" className="text-white/70 hover:text-white transition-colors">
-                  +966 50 000 0000
+                <a href="tel:+201025539040" className="text-white/70 hover:text-white transition-colors">
+                  <span dir="ltr">+20 102 553 9040</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-white/70">
-                  {isRTL ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'}
+                  {isRTL ? 'القاهرة، مصر' : 'Cairo, Egypt'}
                 </span>
               </li>
             </ul>

@@ -1,4 +1,15 @@
-# Logs
+node_modules/
+dist/
+.env
+server/.env
+.DS_Store
+npm-debug.log*
+.idea/
+.vscode/
+.cache/
+coverage/
+/*.tgz
+public/build# Logs
 logs
 *.log
 npm-debug.log*

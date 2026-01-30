@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Clock, Users } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 
 const CampsGrid = () => {
   const { t, isRTL } = useLanguage();
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+  const navigate = useNavigate();
 
   const camps = [
     {
@@ -24,7 +26,7 @@ const CampsGrid = () => {
       titleAr: 'إدارة لينكس 2 (RHCE)',
       titleEn: 'Linux Admin 2 (RHCE)',
       categoryKey: 'category.linux',
-      price: 6500,
+      price: 300,
       duration: isRTL ? '5 أيام' : '5 Days',
       students: 62,
       gradient: 'from-red-700 to-rose-900',
@@ -35,7 +37,7 @@ const CampsGrid = () => {
       titleAr: 'المسار الكامل لإدارة لينكس',
       titleEn: 'Linux Administration Full Track',
       categoryKey: 'category.linux',
-      price: 10500,
+      price: 500,
       duration: isRTL ? '10 أيام' : '10 Days',
       students: 45,
       gradient: 'from-red-600 to-orange-600',
@@ -46,7 +48,7 @@ const CampsGrid = () => {
       titleAr: 'أتمتة الأنظمة باستخدام Ansible',
       titleEn: 'Ansible Automation',
       categoryKey: 'category.automation',
-      price: 5000,
+      price: 400,
       duration: isRTL ? '4 أيام' : '4 Days',
       students: 78,
       gradient: 'from-slate-700 to-slate-900',
@@ -57,7 +59,7 @@ const CampsGrid = () => {
       titleAr: 'إدارة الأنظمة مع Red Hat Satellite',
       titleEn: 'Red Hat Satellite',
       categoryKey: 'category.cloud',
-      price: 7500,
+      price: 300,
       duration: isRTL ? '5 أيام' : '5 Days',
       students: 34,
       gradient: 'from-blue-600 to-indigo-800',
@@ -68,7 +70,7 @@ const CampsGrid = () => {
       titleAr: 'منصة OpenShift للحاويات',
       titleEn: 'OpenShift Container Platform',
       categoryKey: 'category.containers',
-      price: 8500,
+      price: 650,
       duration: isRTL ? '5 أيام' : '5 Days',
       students: 56,
       gradient: 'from-red-500 to-red-700',
@@ -157,6 +159,7 @@ const CampsGrid = () => {
                     variant="default"
                     size="sm"
                     className="group/btn"
+                    onClick={() => navigate(`/enroll?course=${encodeURIComponent(isRTL ? camp.titleAr : camp.titleEn)}`)}
                   >
                     {t('camps.card.enroll')}
                     <ArrowIcon className="w-4 h-4 ms-1 group-hover/btn:translate-x-1 rtl:group-hover/btn:-translate-x-1 transition-transform" />

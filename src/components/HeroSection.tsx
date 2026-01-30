@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Play } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   const { t, isRTL } = useLanguage();
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+  const navigate = useNavigate();
 
   return (
     <section className="relative min-h-screen pt-20 md:pt-24 overflow-hidden bg-gradient-to-b from-background to-secondary/30">
@@ -100,6 +102,7 @@ const HeroSection = () => {
                 variant="default"
                 size="lg"
                 className="group w-full sm:w-auto text-lg px-8 py-6"
+                onClick={() => navigate('/camps')}
               >
                 {t('hero.cta.primary')}
                 <ArrowIcon className="w-5 h-5 ms-2 group-hover:translate-x-1 transition-transform rtl:group-hover:-translate-x-1" />
@@ -144,7 +147,7 @@ const HeroSection = () => {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-6 -right-6 bg-card rounded-2xl shadow-lg border border-border p-4"
+                className="absolute -top-6 -right-6 z-20 bg-card rounded-2xl shadow-lg border border-border p-4"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-red-600/20 flex items-center justify-center">
@@ -160,7 +163,7 @@ const HeroSection = () => {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-4 -left-6 bg-card rounded-2xl shadow-lg border border-border p-4"
+                className="absolute -bottom-4 -left-6 z-20 bg-card rounded-2xl shadow-lg border border-border p-4"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
