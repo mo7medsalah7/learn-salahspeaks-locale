@@ -78,9 +78,10 @@ const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/10 text-red-600 text-sm font-medium mb-6"
             >
-              ✨ {isRTL ? 'أول منصة في الشرق الأوسط' : 'First Platform in the Middle East'}
+              <span className="text-lg">🎓</span>
+              {isRTL ? 'مدربين معتمدين من Red Hat' : 'Red Hat Certified Instructors'}
             </motion.div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6">
@@ -123,17 +124,17 @@ const HeroSection = () => {
           >
             <div className="relative w-full max-w-lg mx-auto">
               {/* Main Card */}
-              <div className="relative z-10 bg-card rounded-3xl shadow-2xl border border-border overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/5 to-accent/10 flex items-center justify-center">
+            <div className="relative z-10 bg-card rounded-3xl shadow-2xl border border-border overflow-hidden">
+                <div className="aspect-[4/3] bg-gradient-to-br from-red-600/10 to-slate-900/10 flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                      <span className="text-4xl font-bold text-primary-foreground">UX</span>
+                    <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center">
+                      <span className="text-5xl">🐧</span>
                     </div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">
                       {isRTL ? 'ابدأ رحلتك' : 'Start Your Journey'}
                     </h3>
                     <p className="text-muted-foreground">
-                      {isRTL ? 'تعلم من الخبراء' : 'Learn from Experts'}
+                      {isRTL ? 'احترف لينكس مع Red Hat' : 'Master Linux with Red Hat'}
                     </p>
                   </div>
                 </div>
@@ -146,12 +147,12 @@ const HeroSection = () => {
                 className="absolute -top-6 -right-6 bg-card rounded-2xl shadow-lg border border-border p-4"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-success/20 flex items-center justify-center">
-                    <span className="text-success text-lg">✓</span>
+                  <div className="w-10 h-10 rounded-xl bg-red-600/20 flex items-center justify-center">
+                    <span className="text-red-600 text-lg">🎖️</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">{isRTL ? 'شهادة معتمدة' : 'Certified'}</p>
-                    <p className="text-xs text-muted-foreground">{isRTL ? 'دوليًا' : 'Internationally'}</p>
+                    <p className="font-semibold text-sm">{isRTL ? 'شهادة Red Hat' : 'Red Hat Certified'}</p>
+                    <p className="text-xs text-muted-foreground">{isRTL ? 'معتمدة دوليًا' : 'Internationally'}</p>
                   </div>
                 </div>
               </motion.div>
@@ -163,11 +164,11 @@ const HeroSection = () => {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
-                    <span className="text-primary text-lg">👥</span>
+                    <span className="text-primary text-lg">💼</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">{isRTL ? '+500 طالب' : '500+ Students'}</p>
-                    <p className="text-xs text-muted-foreground">{isRTL ? 'هذا الشهر' : 'This Month'}</p>
+                    <p className="font-semibold text-sm">{isRTL ? '+1000 خريج' : '1000+ Graduates'}</p>
+                    <p className="text-xs text-muted-foreground">{isRTL ? 'في السوق' : 'In the Field'}</p>
                   </div>
                 </div>
               </motion.div>
