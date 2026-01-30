@@ -32,7 +32,7 @@ const Navbar = () => {
               <span className="text-primary-foreground font-bold text-lg">S</span>
             </div>
             <span className="text-xl font-bold text-foreground">
-              salahspeaks
+              S-Tech Academy
             </span>
           </motion.div>
 

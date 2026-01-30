@@ -13,7 +13,7 @@ const CampsGrid = () => {
       titleAr: 'إدارة لينكس 1 (RHCSA)',
       titleEn: 'Linux Admin 1 (RHCSA)',
       categoryKey: 'category.linux',
-      price: 5500,
+      price: 300,
       duration: isRTL ? '5 أيام' : '5 Days',
       students: 85,
       gradient: 'from-red-600 to-red-800',

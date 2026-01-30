@@ -21,7 +21,7 @@ const translations = {
     // Hero
     'hero.title': 'احترف لينكس والحوسبة السحابية',
     'hero.titleHighlight': 'مع معسكرات تفاعلية',
-    'hero.subtitle': 'منصة salahspeaks المتخصصة في تعليم إدارة أنظمة لينكس والحوسبة السحابية بشكل عملي تفاعلي على يد خبراء ومحترفين معتمدين من Red Hat تمتد خبراتهم لأكثر من 15 عامًا',
+    'hero.subtitle': 'منصة S-Tech Academy المتخصصة في تعليم إدارة أنظمة لينكس والحوسبة السحابية بشكل عملي تفاعلي على يد خبراء ومحترفين معتمدين من Red Hat تمتد خبراتهم لأكثر من 15 عامًا',
     'hero.cta.primary': 'اكتشف المعسكرات',
     'hero.cta.secondary': 'تصفح الدورات',
     
@@ -47,11 +47,11 @@ const translations = {
     
     // Footer
     'footer.about': 'من نحن',
-    'footer.about.text': 'منصة salahspeaks الرائدة في تعليم إدارة أنظمة لينكس والحوسبة السحابية في الشرق الأوسط بأساليب عملية وتفاعلية.',
+    'footer.about.text': 'منصة S-Tech Academy الرائدة في تعليم إدارة أنظمة لينكس والحوسبة السحابية في الشرق الأوسط بأساليب عملية وتفاعلية.',
     'footer.links': 'روابط سريعة',
     'footer.support': 'الدعم',
     'footer.social': 'تواصل معنا',
-    'footer.copyright': '© 2024 salahspeaks. جميع الحقوق محفوظة.',
+    'footer.copyright': '© 2024 S-Tech Academy. جميع الحقوق محفوظة.',
     'footer.terms': 'الشروط والأحكام',
     'footer.privacy': 'سياسة الخصوصية',
     'footer.faq': 'الأسئلة الشائعة',
@@ -68,7 +68,7 @@ const translations = {
     // Hero
     'hero.title': 'Master Linux & Cloud',
     'hero.titleHighlight': 'with Interactive Bootcamps',
-    'hero.subtitle': 'salahspeaks is the leading platform for learning Linux system administration and cloud computing through practical, hands-on training with Red Hat certified experts with over 15 years of experience',
+    'hero.subtitle': 'S-Tech Academy is the leading platform for learning Linux system administration and cloud computing through practical, hands-on training with Red Hat certified experts with over 15 years of experience',
     'hero.cta.primary': 'Discover Bootcamps',
     'hero.cta.secondary': 'View Courses',
     
@@ -84,7 +84,7 @@ const translations = {
     'camps.title': 'Available Training Courses',
     'camps.subtitle': 'Choose the right path for you and start your journey in Linux and Cloud computing',
     'camps.card.enroll': 'Enroll Now',
-    'camps.currency': 'SAR',
+    'camps.currency': 'R.S',
     
     // Course Categories
     'category.linux': 'Linux Admin',
@@ -94,11 +94,11 @@ const translations = {
     
     // Footer
     'footer.about': 'About Us',
-    'footer.about.text': 'salahspeaks is the leading platform for teaching Linux system administration and cloud computing in the Middle East with practical and interactive methods.',
+    'footer.about.text': 'S-Tech Academy is the leading platform for teaching Linux system administration and cloud computing in the Middle East with practical and interactive methods.',
     'footer.links': 'Quick Links',
     'footer.support': 'Support',
     'footer.social': 'Connect With Us',
-    'footer.copyright': '© 2024 salahspeaks. All rights reserved.',
+    'footer.copyright': '© 2024 S-Tech Academy. All rights reserved.',
     'footer.terms': 'Terms & Conditions',
     'footer.privacy': 'Privacy Policy',
     'footer.faq': 'FAQ',
