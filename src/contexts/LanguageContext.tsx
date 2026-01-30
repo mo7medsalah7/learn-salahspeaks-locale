@@ -125,8 +125,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
     document.documentElement.lang = language;
     document.documentElement.style.fontFamily = isRTL 
-      ? "'Cairo', 'Inter', sans-serif" 
-      : "'Inter', 'Cairo', sans-serif";
+      ? "'IBM Plex Sans Arabic', 'Inter', sans-serif" 
+      : "'Inter', 'IBM Plex Sans Arabic', sans-serif";
   }, [language, isRTL]);
 
   return (
