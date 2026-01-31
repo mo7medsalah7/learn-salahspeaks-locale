@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Play } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Play, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -114,6 +114,15 @@ const HeroSection = () => {
               >
                 <Play className="w-5 h-5 me-2" />
                 {t('hero.cta.secondary')}
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="w-full sm:w-auto text-lg px-8 py-6 border-primary/20 hover:bg-primary/5"
+                onClick={() => window.open('https://t.me/stechacademy01', '_blank')}
+              >
+                <Send className="w-5 h-5 me-2 text-primary" />
+                {t('hero.telegram')}
               </Button>
             </div>
           </motion.div>

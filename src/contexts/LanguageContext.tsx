@@ -17,6 +17,7 @@ const translations = {
     'nav.courses': 'الدورات',
     'nav.graduates': 'الخريجين',
     'nav.login': 'تسجيل الدخول',
+    'nav.telegram': 'تليجرام',
     
     // Hero
     'hero.title': 'احترف لينكس والحوسبة السحابية',
@@ -24,6 +25,7 @@ const translations = {
     'hero.subtitle': 'منصة S-Tech Academy المتخصصة في تعليم إدارة أنظمة لينكس والحوسبة السحابية بشكل عملي تفاعلي على يد خبراء ومحترفين معتمدين من Red Hat تمتد خبراتهم لأكثر من 15 عامًا',
     'hero.cta.primary': 'اكتشف المعسكرات',
     'hero.cta.secondary': 'تصفح الدورات',
+    'hero.telegram': 'انضم لقناتنا على تليجرام',
     
     // Stats
     'stats.camps': 'دورة تدريبية',
@@ -64,6 +66,7 @@ const translations = {
     'nav.courses': 'Courses',
     'nav.graduates': 'Graduates',
     'nav.login': 'Login',
+    'nav.telegram': 'Telegram',
     
     // Hero
     'hero.title': 'Master Linux & Cloud',
@@ -71,6 +74,7 @@ const translations = {
     'hero.subtitle': 'S-Tech Academy is the leading platform for learning Linux system administration and cloud computing through practical, hands-on training with Red Hat certified experts with over 15 years of experience',
     'hero.cta.primary': 'Discover Bootcamps',
     'hero.cta.secondary': 'View Courses',
+    'hero.telegram': 'Join our Telegram Channel',
     
     // Stats
     'stats.camps': 'Training Courses',

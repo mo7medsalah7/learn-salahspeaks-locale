@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
+import { Menu, X, Globe, Sun, Moon, Send } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -53,6 +53,19 @@ const Navbar = () => {
 
           {/* Actions */}
           <div className="flex items-center gap-3">
+            {/* Telegram Button */}
+            <motion.a
+              href="https://t.me/stechacademy01"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 px-3 py-2 rounded-full border border-border bg-secondary/50 hover:bg-secondary transition-colors"
+            >
+              <Send className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium">{t('nav.telegram')}</span>
+            </motion.a>
+
             {/* Theme Toggle */}
             <motion.button
               whileHover={{ scale: 1.05 }}
