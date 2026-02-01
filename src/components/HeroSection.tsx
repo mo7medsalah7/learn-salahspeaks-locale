@@ -10,7 +10,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-screen pt-20 md:pt-24 overflow-hidden bg-gradient-to-b from-background to-secondary/30">
+    <section className="relative min-h-screen pt-32 md:pt-40 overflow-hidden bg-gradient-to-b from-background to-secondary/30">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Blue Orb */}
