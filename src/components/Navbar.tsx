@@ -23,7 +23,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -150 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm"
     >
       {/* Advertisement Banner */}
       <div className="bg-emerald-600 text-white py-2 px-4 text-center shadow-sm" dir="rtl">

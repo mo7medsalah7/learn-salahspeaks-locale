@@ -25,7 +25,7 @@ const HeroSection = () => {
             ease: 'easeInOut',
           }}
           style={{ willChange: 'transform, opacity' }}
-          className="absolute top-20 right-[10%] w-64 h-64 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 blur-3xl"
+          className="absolute top-20 right-[10%] w-64 h-64 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 blur-2xl transform-gpu"
         />
         {/* Purple Orb */}
         <motion.div
@@ -39,7 +39,7 @@ const HeroSection = () => {
             ease: 'easeInOut',
           }}
           style={{ willChange: 'transform, opacity' }}
-          className="absolute bottom-20 left-[5%] w-48 h-48 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-accent/30 to-primary/20 blur-3xl"
+          className="absolute bottom-20 left-[5%] w-48 h-48 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-accent/30 to-primary/20 blur-2xl transform-gpu"
         />
         {/* Teal Orb */}
         <motion.div
@@ -53,7 +53,7 @@ const HeroSection = () => {
             ease: 'easeInOut',
           }}
           style={{ willChange: 'transform, opacity' }}
-          className="absolute top-1/2 left-1/3 w-32 h-32 rounded-full bg-gradient-to-br from-success/40 to-primary/20 blur-2xl"
+          className="absolute top-1/2 left-1/3 w-32 h-32 rounded-full bg-gradient-to-br from-success/40 to-primary/20 blur-xl transform-gpu"
         />
         
         {/* Decorative Dots */}
